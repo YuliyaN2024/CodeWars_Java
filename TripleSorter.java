@@ -26,7 +26,12 @@ public class TripleSorter {
         students.add(new Student(25, 82, "Mark Rose"));
         students.add(new Student(22, 90, "Jane Doe"));
         students.add(new Student(25, 90, "Jane Dane"));
-        System.out.println("Jane Doe,Jane Dane,David Goodman,Mark Rose" +
-                TripleSorter.sort(students));
+        System.out.println (TripleSorter.sort(students));
+        Student student = new Student(1, 20, "John Smith");
+
+        System.out.println(student.getFullName().split(" ")[1]);
+        char ch = student.getFullName().split(" ")[1].charAt(0);
+        System.out.println(ch);
+
     }
 }
